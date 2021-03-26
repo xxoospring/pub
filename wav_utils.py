@@ -182,7 +182,7 @@ def online_play(nd_data, sr):
                     output=True)
 
     # play stream (3), blocking call
-    stream.write(nd_data)
+    stream.write(nd_data.astype(np.short).tostring())
 
     # stop stream (4)
     stream.stop_stream()
