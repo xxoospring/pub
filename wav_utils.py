@@ -8,7 +8,7 @@ from scipy.signal import resample as sci_resample
 from pysndfx import AudioEffectsChain
 import pydub
 import pyaudio
-
+import sys
 
 def wav_read(wav_file):
     assert wav_file.endswith('wav'), "file error"
